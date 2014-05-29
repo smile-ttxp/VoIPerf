@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default values -->
+    <integer name="measurementLogRotateSzDefault">1048576</integer>
+    <bool name="startOnBootDefault">true</bool>
+    <bool name="foregroundServiceRunningDefault">true</bool>
+    <string name="schedulerTypeDefault">FixedRepeatScheduler</string>
+    <integer name="fixedRepeatSchedulerProfileDefault">2</integer>
+    <integer name="fixedRepeatSchedulerBatteryMinPrefDefault">5</integer>
+    <integer name="pingCountDefault">10</integer>
+    
+    <!-- FixedRepeatScheduler -->
+    <string name="fixedRepeatSchedulerProfilePrefKey">KEY_FIXED_SCHEDULER_PROFILE</string>
+    <string name="fixedRepeatSchedulerBatteryMinPrefKey">KEY_FIXED_SCHEDULER_BATTERY_THRESHOLD</string>
+    <string name="fixedRepeatSchedulerNextTime">KEY_FIXED_SCHEDULER_NEXT_TIME</string>
+    <integer name="fixedRepeatSchedulerBackoffSeconds">300</integer>
+    <integer name="fixedRepeatSchedulerRetrySeconds">900</integer>
+    <integer name="fixedRepeatSchedulerBatteryLowRetrySeconds">900</integer>
+    <string-array name="fixedRepeatSchedulerProfiles">
+        <item>Standard frequency</item>
+        <item>Low frequency</item>
+        <item>Very low frequency</item>
+        <item>Every minute (for debugging purposes)</item>
+    </string-array>
+    <string-array name="fixedRepeatSchedulerProfilesValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="fixedRepeatSchedulerBatteryThresholds">
+        <item>5%</item>
+        <item>10%</item>
+        <item>20%</item>
+    </string-array>
+    <string-array name="fixedRepeatSchedulerBatteryThresholdsValues">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    
+    <!-- Global Preferences Keys -->
+    <string name="startOnBootPrefKey">KEY_START_ON_BOOT</string>
+    <string name="schedulerTypePrefKey">KEY_SCHEDULER_TYPE</string>
+    <string name="schedulerConfigPrefKey">KEY_SCHEDULER_CONFIG</string>
+    <string name="measurementLogRotateSzKey">KEY_MEASUREMENT_LOG_ROTATE_SZ</string>
+    <string name="systemLogRotateSzKey">KEY_SYSTEM_LOG_ROATE_SZ</string>
+    <string name="foregroundServiceRunningKey">KEY_FOREGROUND_SERVICE_STARTED</string>
+
+    <!-- Logger -->
+    <integer name="systemLogRotateSzDefault">1048576</integer>
+    <string name="lastSystemLogFileRotatioKey">KEY_LAST_LOG_FILE_ROTATION</string>
+    <integer name="systemLogRotateSecondsDefault">3600</integer>
+    
+    <!-- Measurement server -->
+    <string name="measurementServerAddress">151.100.179.250</string>
+    <integer name="measurementServerPort">12345</integer>	
+
+    <!-- VoIP Measurement -->
+    <string name="measurementServerAvailableMsg">OK</string>
+    <string name="measurementServerBusyMsg">BUSY</string>
+    <string name="tasksListIndexPrefKey">KEY_TASKS_LIST_INDEX</string>
+    <integer name="traceSocketWaitTimeoutMillis">10000</integer>
+    <integer name="traceSocketReadTimeoutMillis">3000</integer>
+    <integer name="traceSocketSendBufferSize">1048576</integer>
+    <integer name="traceSocketRecvBufferSize">1048576</integer>
+    <integer name="senderThreadWaitMillis">10000</integer>
+    <integer name="maxTracePacketSize">1500</integer>
+    <string name="traceEndMessage">QUIT</string>
+    <string name="measurementsEndMessage">END</string>
+    <string name="holePunchingMessage">I HATE NAT</string>
+    <integer name="holePunchingRetires">3</integer>
+    <integer name="holePunchingWaitTimeMillis">100</integer>
+    
+    <!-- Ping to the first hop -->
+    <integer name="discoveryPingCount">5</integer>
+    <integer name="firstHopPingPerSecond">2</integer>
+    <integer name="firstHopPingPacketSize">8</integer>
+    <integer name="firstHopPingMinDurationSeconds">2</integer>
+    
+    <!-- CheckVersion -->
+    <string name="versionContentURL">http://151.100.179.250/voiperf_update/</string>
+    <string name="updateNowLabel">Update now</string>
+    <string name="remindMeLaterLabel">Remind me later</string>
+    <string name="ignoreThisVersionLabel">Ignore this version</string>
+    <integer name="reminderTimer">30</integer>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="it.uniroma1.voiperf"
+    android:versionCode="10"
+    android:versionName="2013-12-5_alpha" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="13" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/appName" >
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/appName"
+            android:launchMode="singleTask" android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VoIPerfPreferenceActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".schedulers.FixedRepeatSchedulerPreferences" android:screenOrientation="portrait"></activity>
+        
+            <activity 
+      			android:name=".StatusActivity"
+      			android:launchMode="singleTask" 
+      			android:theme="@android:style/Theme.Light.NoTitleBar" android:screenOrientation="portrait">
+    		</activity>
+           
+            <activity 
+      			android:name=".ResultsActivity"
+      			android:launchMode="singleTask" 
+      			android:theme="@android:style/Theme.Light.NoTitleBar" android:screenOrientation="portrait">          
+    		</activity>
+            
+            <activity 
+      			android:name=".MapActivity"
+      			android:launchMode="singleTask" 
+      			android:theme="@android:style/Theme.Light.NoTitleBar" android:screenOrientation="portrait">
+    		</activity>
+    	
+        <service android:name=".MeasurementService"></service>
+        
+        <receiver android:enabled="true"
+                  android:name=".BootListener">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".VoIPerfUpdateListener">
+  			<intent-filter>
+    		<action android:name="android.intent.action.PACKAGE_REPLACED" />
+    	<data android:scheme="package" android:path="it.uniroma1.voiperf" />
+    	
+  </intent-filter>
+</receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="match_parent"
+   	android:layout_height="match_parent"
+   	android:layout_weight="1">
+    <TableRow  
+    	android:layout_height="wrap_content"
+    	android:layout_width="match_parent">
+   	
+	    <TextView	     
+	        android:layout_weight="1" 
+	        android:layout_width="110dip" 
+	        android:layout_height="50dp"
+	        android:paddingTop="10dp"
+	        android:background="#000000"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/resultDate"
+	        android:textSize="12sp" 
+	        android:gravity="left"/>
+	    
+	    <TextView	  
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	        android:paddingTop="10dp"    
+	        android:background="#000000"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/resultType"
+	        android:textSize="12sp" 
+	        android:gravity="left"/>
+	    
+	     <TextView	  
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	  		android:paddingTop="10dp"
+	        android:background="#000000"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/resultRate"
+	        android:textSize="12sp" 
+	        android:gravity="left"/>
+	     
+	     <TextView
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	  		android:paddingTop="10dp"			        
+	        android:background="#000000"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/resultPacketLoss"
+	        android:textSize="12sp" 
+	        android:gravity="left"/>
+	     
+	     <TextView
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	  		android:paddingTop="10dp"			        
+	        android:background="#000000"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/resultMOS"
+	        android:textSize="12sp" 
+	        android:gravity="left"/>
+	     
+	</TableRow>		
+
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1">
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical">
+		    
+			<TableLayout 
+			    android:id="@+id/resultsTable"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="match_parent" >
+		    
+			    <TableRow
+			    	android:id="@+id/resultsRow"
+			    	android:layout_height="wrap_content"
+			    	android:layout_width="match_parent">
+			    	
+				    <TextView
+				        android:id="@+id/resultDate"
+				        android:layout_weight="1" 
+				        android:layout_width="120dip" 
+				        android:layout_height="50dp"
+				        android:paddingTop="10dp"
+				        android:background="#000000"
+				        android:textColor="#FFFFFF"
+				        android:text="@string/resultDate"
+				        android:textSize="12sp" 
+				        android:gravity="left"/>
+				    
+				    <TextView
+				        android:id="@+id/resultType"
+				        android:layout_weight="1"
+				        android:layout_height="50dp"
+				        android:paddingTop="10dp"
+				        android:background="#000000"
+				        android:textColor="#FFFFFF"
+				        android:text="@string/resultType"
+				        android:textSize="12sp" 
+				        android:gravity="left"/>
+				    
+				     <TextView
+				        android:id="@+id/resultRate"
+				        android:layout_weight="1"
+				        android:layout_height="50dp"
+				  		android:paddingTop="10dp"
+				        android:background="#000000"
+				        android:textColor="#FFFFFF"
+				        android:text="@string/resultRate"
+				        android:textSize="12sp" 
+				        android:gravity="left"/>
+				     
+				     <TextView
+				        android:id="@+id/resultPacketLoss"
+				        android:layout_weight="1"
+				        android:layout_height="50dp"
+				  		android:paddingTop="10dp"			        
+				        android:background="#000000"
+				        android:textColor="#FFFFFF"
+				        android:text="@string/resultPacketLoss"
+				        android:textSize="12sp" 
+				        android:gravity="left"/>
+				     
+				     <TextView
+				        android:id="@+id/resultMOS"
+				        android:layout_weight="1"
+				        android:layout_height="50dp"
+				  		android:paddingTop="10dp"			        
+				        android:background="#000000"
+				        android:textColor="#FFFFFF"
+				        android:text="@string/resultMOS"
+				        android:textSize="12sp" 
+				        android:gravity="center"/>
+				     
+				</TableRow>	
+			</TableLayout>			
+		</LinearLayout>
+	</ScrollView>
+</TableLayout>

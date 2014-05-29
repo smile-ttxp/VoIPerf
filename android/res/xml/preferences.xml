@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:title="Preferences">
+  <!--<CheckBoxPreference
+      android:title="Start on Boot"
+      android:defaultValue="@bool/startOnBootDefault"
+      android:summary="@string/startOnBootPrefSummary"
+      android:key="@string/startOnBootPrefKey"/>-->
+  <ListPreference
+      android:key="@string/fixedRepeatSchedulerProfilePrefKey"
+      android:defaultValue="@integer/fixedRepeatSchedulerProfileDefault"
+      android:summary="@string/fixedRepeatSchedulerProfilePrefSummary"
+      android:title="@string/fixedRepeatSchedulerProfilePrefTitle"
+  ></ListPreference>
+  <ListPreference
+      android:key="@string/fixedRepeatSchedulerBatteryMinPrefKey"
+      android:entries="@array/fixedRepeatSchedulerBatteryThresholds"
+      android:entryValues="@array/fixedRepeatSchedulerBatteryThresholdsValues"
+      android:defaultValue="@integer/fixedRepeatSchedulerBatteryMinPrefDefault"
+      android:summary="@string/fixedRepeatSchedulerBatteryMinPrefSummary"
+      android:title="@string/fixedRepeatSchedulerBatteryMinPrefTitle"
+  ></ListPreference>
+</PreferenceScreen>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appName">VoIPerf</string>
+    <string name="title">VoIPerf</string>
+    <string name="voiperfStillRunning">VoIPerf service is running</string>
+    <string name="externalFilesDir">VoIPerf</string>
+    
+    <!-- FixdRepeatScheduler -->
+    <string name="fixedRepeatSchedulerTitle">Fixed Repeat Scheduler</string>
+    <string name="fixedRepeatSchedulerSummary">Schedules the measurements at a fixed time interval</string>
+    <string name="fixedRepeatSchedulerInvalidInterval">Interval must be greater than 0</string>
+    <string name="fixedRepeatSchedulerInvalidBattery">Battery threshold must be between 0 and 100</string>
+    <string name="fixedRepeatSchedulerProfilePrefSummary">Change the amount of data that can be used for measurements each week</string>
+    <string name="fixedRepeatSchedulerProfilePrefTitle">Measurement Profiles</string>
+    <string name="fixedRepeatSchedulerBatteryMinPrefSummary">Stop measurements when the battery percentage goes below a given level</string>
+    <string name="fixedRepeatSchedulerBatteryMinPrefTitle">Battery threshold (percentage)</string>
+    <string name="costPerWeek">every week</string>
+    
+    <!-- Menu/Prefs Strings -->
+    <string name="menuSettings">Settings</string>
+    <string name="startOnBootPrefSummary">Start VoIPerf automatically when the phone boots?</string>
+    
+    <!-- Results Table -->
+    <string name="resultDate">Date</string>
+    <string name="resultType">Up/\nDown</string>
+    <string name="resultRate">KB/s</string>
+    <string name="resultPacketLoss">Packet\nloss(%)</string>
+    <string name="resultMOS">MOS</string>
+    
+</resources>
